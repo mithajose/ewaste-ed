@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+  <!-- Brand -->
+<!-- <a class="navbar-brand"routerLink="register">Navbar</a> -->
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="register">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="addlist">Add List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="viewlist">View List</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="aggregator">Aggregator</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="recycler">Recycler</a>
+          </li>
+    </ul>
+  </div>
+</nav> 
+
+<!-- <app-register>
+
+</app-register> -->
+
+<router-outlet></router-outlet>

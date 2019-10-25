@@ -1,0 +1,17 @@
+// console.log(req.body)
+// var address=web3.eth.accounts[0];
+// async function start(){
+    //  web3.eth.getAccounts(console.log);
+
+    // web3.eth.defaultAccount = web3.eth.accounts[0]
+	
+	// console.log(myContract,"myContract=======>",address)
+    
+    // var fun1 = await myContract.regUser.sendTransaction("0x710bd4e1863f8b6c71a0e0d407a0c87f94d01035","hjgjhg","thrissur",1,{ gas: 200000})
+    //  console.log("gfhfhgfghfhhghgfh>>>>>>>>>>>>>>",fun1)
+//    var fun2 = await myContract.getUser(address)
+//      console.log("gettttttttttttttttttttttt>>>>>>>>>>>>>>",fun2);
+  
+  
+//   }
+//   start()

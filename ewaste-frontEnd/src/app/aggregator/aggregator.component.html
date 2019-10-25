@@ -1,0 +1,56 @@
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <!-- <div class="login100-pic js-tilt" data-tilt>
+                    <img src="../../assets/img-01.png" alt="IMG">
+                </div> -->
+
+
+            <span class="login100-form-title">
+                Aggregator List
+            </span>
+
+            <br>
+
+            <div *ngIf="showMe">
+                <table class="table">
+
+                    <tr>
+                        <th>List Id</th>
+                        <th>Manufacturer Name</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+
+                    <tr *ngFor="let data of items">
+                        <td>{{data[0]}}</td>
+                        <td>{{data[1]}}</td>
+                        <td>{{data[2]}}</td>
+                        <td>{{data[3]}}</td>
+                        <td>{{data[4]}}</td>
+                        <td>
+                            <!-- <div class="container-login100-form-btn"> -->
+                            <button (click)="sendToRecycler(data[0])" class="login100-form-btn2">
+                                Send to Recycler
+                            </button>
+                            <!-- </div> -->
+                        </td>
+                    </tr>
+
+
+                    <!-- <div class="container-login100-form-btn">
+                                        <button (click)="searchdata(listid)" class="login100-form-btn">
+                                            Search
+                                        </button>
+                                    </div> -->
+                </table>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>

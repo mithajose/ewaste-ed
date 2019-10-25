@@ -1,0 +1,92 @@
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="../../assets/img-01.png" alt="IMG">
+				</div>
+
+				<div class="login100-form validate-form">
+					<span class="login100-form-title">
+						View List
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid list ID is required: ex@abc.xyz">
+						<input class="input100" type="number" [(ngModel)]="listid" name="listid" placeholder="List ID">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+                    </div>
+                    
+                    <div class="container-login100-form-btn">
+						<button (click)="searchdata(listid)" class="login100-form-btn">
+							Search
+						</button>
+                    </div>
+                    <br>
+
+                    <div *ngIf="showMe">
+                        <table class="table">
+                            
+                            <tr >
+                                <th>Aggregator Name</th>
+                                <td>{{data.aggregatorName}}</td>
+                              </tr>
+                             
+                              <tr >
+                                <th>Category</th>
+                                <td>{{data.category}}</td>
+                              </tr>
+                              <tr >
+                                <th>Description</th>
+                                <td>{{data.description}}</td>
+                              </tr>
+                              <tr >
+                                <th>Amount</th>
+                                <td>{{data.amount}}</td>
+							  </tr>
+							  <tr >
+                                <th>Status</th>
+								<td *ngIf="data.status=='0'">Sended to Aggregator</td>
+								<td *ngIf="data.status=='1'">Sended to Recycler</td>
+								<td *ngIf="data.status=='2'">Completed</td>
+                              </tr>
+							  <!-- <div class="container-login100-form-btn">
+								<button (click)="sendToAggregator(listid)" class="login100-form-btn2">
+									Send to Aggregator
+								</button>
+							</div> -->
+                        </table>
+                    </div>
+                    
+					
+
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.3
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
